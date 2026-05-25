@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krishna Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Krishna Coffee Shop home">
+        <span class="brand-mark">K</span>
+        <span>
+          <strong>Krishna</strong>
+          <small>Coffee Shop</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="#specials">Specials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-label="Krishna Coffee Shop welcome">
+        <div class="hero-content">
+          <p class="eyebrow">Freshly brewed every morning</p>
+          <h1>Krishna Coffee Shop</h1>
+          <p class="hero-copy">
+            A warm local coffee spot serving rich filter coffee, creamy lattes,
+            cool frappes, and simple bites made for relaxed conversations.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#menu">View Menu</a>
+            <a class="button secondary" href="#contact">Visit Us</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Today's fresh brew">
+          <div class="coffee-cup">
+            <span class="steam steam-one"></span>
+            <span class="steam steam-two"></span>
+            <span class="steam steam-three"></span>
+            <div class="cup"></div>
+            <div class="saucer"></div>
+          </div>
+          <p>Today's favorite</p>
+          <strong>Classic Filter Coffee</strong>
+          <span>Strong, smooth, and comforting.</span>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu">
+        <div class="section-heading">
+          <p class="eyebrow">Simple menu</p>
+          <h2>Fresh coffee and light bites</h2>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div>
+              <h3>Filter Coffee</h3>
+              <p>South Indian style coffee with frothy milk.</p>
+            </div>
+            <strong>Rs. 40</strong>
+          </article>
+          <article class="menu-card">
+            <div>
+              <h3>Masala Tea</h3>
+              <p>Spiced tea brewed warm and fragrant.</p>
+            </div>
+            <strong>Rs. 30</strong>
+          </article>
+          <article class="menu-card">
+            <div>
+              <h3>Cappuccino</h3>
+              <p>Espresso, steamed milk, and soft foam.</p>
+            </div>
+            <strong>Rs. 90</strong>
+          </article>
+          <article class="menu-card">
+            <div>
+              <h3>Cold Coffee</h3>
+              <p>Chilled coffee blended creamy and sweet.</p>
+            </div>
+            <strong>Rs. 110</strong>
+          </article>
+          <article class="menu-card">
+            <div>
+              <h3>Veg Sandwich</h3>
+              <p>Fresh vegetables with a crisp toasted finish.</p>
+            </div>
+            <strong>Rs. 80</strong>
+          </article>
+          <article class="menu-card">
+            <div>
+              <h3>Chocolate Muffin</h3>
+              <p>Soft bakery muffin with rich chocolate.</p>
+            </div>
+            <strong>Rs. 70</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section specials" id="specials">
+        <div class="special-panel">
+          <p class="eyebrow">House special</p>
+          <h2>Buy 2 coffees, get 1 mini muffin free.</h2>
+          <p>
+            Perfect for friends, study breaks, or a quick evening treat after a
+            long day.
+          </p>
+        </div>
+        <div class="hours-panel">
+          <h3>Opening Hours</h3>
+          <p><span>Mon - Sat</span><strong>7:00 AM - 9:00 PM</strong></p>
+          <p><span>Sunday</span><strong>8:00 AM - 8:00 PM</strong></p>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Come in for a fresh cup.</h2>
+          <p>
+            Tell us your favorite coffee or ask about bulk orders for college,
+            office, and family events.
+          </p>
+          <div class="contact-details">
+            <a href="tel:+919876543210">+91 98765 43210</a>
+            <a href="mailto:hello@krishnacoffee.example">hello@krishnacoffee.example</a>
+            <span>Anna Nagar, Chennai, Tamil Nadu</span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Send Message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Krishna Coffee Shop</p>
+      <span>Fresh coffee. Simple moments.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
